@@ -51,17 +51,15 @@ Repository = "https://github.com/r2d2Pair/claude-code-tracker"
 Issues = "https://github.com/r2d2Pair/claude-code-tracker/issues"
 
 [project.scripts]
-claude-code-tracker = "extract_claude_logs:launch_interactive"
-cct = "extract_claude_logs:launch_interactive"
-
-[tool.setuptools]
-py-modules = ["extract_claude_logs", "interactive_ui", "search_conversations", "realtime_search", "search_cli"]
+claude-code-tracker = "claude_code_tracker.cli:launch_interactive"
+cct = "claude_code_tracker.cli:launch_interactive"
 
 [tool.setuptools.package-dir]
 "" = "src"
 
 [tool.setuptools.packages.find]
 where = ["src"]
+include = ["claude_code_tracker", "claude_code_tracker.*"]
 exclude = ["tests*"]
 
 [tool.black]
