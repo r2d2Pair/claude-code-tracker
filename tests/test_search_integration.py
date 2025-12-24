@@ -14,8 +14,9 @@ sys.path.append(str(Path(__file__).parent.parent))
 sys.path.append(str(Path(__file__).parent))
 
 # Local imports after sys.path modification
-from fixtures.sample_conversations import (ConversationFixtures,  # noqa: E402
-                                           cleanup_test_environment)
+from fixtures.sample_conversations import ConversationFixtures  # noqa: E402
+from fixtures.sample_conversations import cleanup_test_environment
+
 from search_conversations import ConversationSearcher  # noqa: E402
 
 

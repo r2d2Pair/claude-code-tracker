@@ -14,8 +14,8 @@ from unittest.mock import Mock, patch
 sys.path.append(str(Path(__file__).parent.parent))
 
 # Local imports after sys.path modification
-from extract_claude_logs import (ClaudeConversationExtractor,  # noqa: E402
-                                 launch_interactive, main)
+from extract_claude_logs import ClaudeConversationExtractor  # noqa: E402
+from extract_claude_logs import launch_interactive, main
 
 
 class TestErrorHandling(unittest.TestCase):

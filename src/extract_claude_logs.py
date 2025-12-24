@@ -967,7 +967,7 @@ Examples:
 def launch_interactive():
     """Launch the interactive UI directly, or handle search if specified."""
     import sys
-    
+
     # If no arguments provided, launch interactive UI
     if len(sys.argv) == 1:
         try:

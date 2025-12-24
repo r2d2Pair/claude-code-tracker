@@ -8,14 +8,14 @@ import sys
 
 # Handle both package and direct execution imports
 try:
-    from .search_conversations import ConversationSearcher
-    from .realtime_search import create_smart_searcher
     from .extract_claude_logs import ClaudeConversationExtractor
+    from .realtime_search import create_smart_searcher
+    from .search_conversations import ConversationSearcher
 except ImportError:
     # Fallback for direct execution or when not installed as package
-    from search_conversations import ConversationSearcher
-    from realtime_search import create_smart_searcher
     from extract_claude_logs import ClaudeConversationExtractor
+    from realtime_search import create_smart_searcher
+    from search_conversations import ConversationSearcher
 
 
 def main():

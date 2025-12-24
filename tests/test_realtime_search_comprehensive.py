@@ -15,8 +15,13 @@ from unittest.mock import Mock, patch
 sys.path.append(str(Path(__file__).parent.parent))
 
 # Local imports after sys.path modification
-from realtime_search import (KeyboardHandler, RealTimeSearch, SearchState,  # noqa: E402
-                             TerminalDisplay, create_smart_searcher)
+from realtime_search import (  # noqa: E402
+    KeyboardHandler,
+    RealTimeSearch,
+    SearchState,
+    TerminalDisplay,
+    create_smart_searcher,
+)
 
 
 class TestSearchStateComprehensive(unittest.TestCase):

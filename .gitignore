@@ -94,4 +94,4 @@ PR_BODY.md
 
 # Cache directories
 .zig-cache/
-claude_ui/
+claude_ui/.venv/

@@ -522,7 +522,7 @@ def main():
     """Main entry point for running real-time search directly."""
     from extract_claude_logs import ClaudeConversationExtractor
     from search_conversations import ConversationSearcher
-    
+
     # Initialize components
     extractor = ClaudeConversationExtractor()
     searcher = ConversationSearcher()
